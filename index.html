@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N Streem - Movie Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">N Streem</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Series</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <!-- Video Player Section -->
+  <section class="player-section">
+    <div class="video-container">
+      <video id="video" controls preload="metadata" poster="poster.jpg">
+        <source src="Videos/Frankenstein _ Guillermo del Toro _ Official Trailer _ Netflix(720P_HD).mp4" type="video/mp4" />
+        Your browser doesn’t support video playback.
+      </video>
+
+      <!-- Custom Controls -->
+      <div class="controls">
+        <button id="playPause" class="btn">▶️</button>
+        <input type="range" id="seek" min="0" value="0" step="0.1" />
+        <span id="time">00:00 / 00:00</span>
+        <select id="speed">
+          <option value="0.5">0.5x</option>
+          <option value="1" selected>1x</option>
+          <option value="1.5">1.5x</option>
+          <option value="2">2x</option>
+        </select>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        <button id="fullscreen" class="btn">⛶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movie Info Section -->
+  <section class="movie-info">
+    <img src="Image/dd66bbc451f18a3e12f4d4c6f408c705.jpg" alt="Movie Poster" class="poster" />
+    <div class="details">
+      <h2>Frankenstein (2025) </h2>
+      <p class="meta"> Horror/Sci-fi | 2h 29m | 2025 | 16+</p>
+      <p class="rating">IMDb 7.6/10</p>
+      <p class="overview">
+        A brilliant but egotistical scientist brings a monstrous creature to life in a daring experiment that ultimately leads to the undoing of both the creator and his tragic creation.
+      </p>
+      <div class="buttons">
+        <button class="btn">Watchlist +</button>
+        <button class="btn">Share</button>
+        <button class="btn"><a href="https://drive.google.com/file/d/1_iAln3406I95wXdSk41YXmT__4W_Yd8s/view?usp=drivesdk">Download</a></button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
